@@ -1,0 +1,24 @@
+{
+  "name": "evac-sandbox",
+  "version": "0.1.0",
+  "description": "with initial mapbox code",
+  "main": "/public/index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "parcel-bundler": "latest",
+    "mapbox-gl": "latest",
+    "@watergis/mapbox-gl-legend": "latest",
+    "mapbox-gl-controls": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "license": "UNLICENSED",
+  "keywords": []
+}

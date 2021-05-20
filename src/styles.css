@@ -1,0 +1,103 @@
+body {
+  font-family: sans-serif;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.marker {
+  background-image: url("../images/policeperson.png");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.closuremarker {
+  background-image: url("../images/roadblock.png");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.listing-complications,
+.listing-mitigations {
+  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+  border-radius: 3px;
+  max-width: 25%;
+  color: #fff;
+}
+
+.listing-mitigations {
+  top: 10px;
+  background-color: #3386c0;
+}
+
+.listing-complications {
+  top: 200px;
+  background-color: #c0334b;
+}
+
+.listing-complications
+  .listing-mitigations
+  input[type="checkbox"]:first-child
+  + label {
+  border-radius: 3px 3px 0 0;
+}
+
+.listing-complications,
+.listing-mitigations label:last-child {
+  border-radius: 0 0 3px 3px;
+  border: none;
+}
+
+.listing-complications,
+.listing-mitigations input[type="checkbox"] {
+  display: none;
+}
+
+.listing-complications,
+.listing-mitigations input[type="checkbox"] + label {
+  /* background-color: #3386c0; */
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.listing-complications,
+.listing-mitigations input[type="checkbox"] + label {
+  text-transform: capitalize;
+}
+
+.listing-complications,
+.listing-mitigations input[type="checkbox"] + label:hover,
+.listing-complications,
+.listing-mitigations input[type="checkbox"]:checked + label {
+  /* background-color: #4ea0da; */
+}
+
+.listing-complications,
+.listing-mitigations input[type="checkbox"]:checked + label:before {
+  content: "✔";
+  margin-right: 5px;
+}
